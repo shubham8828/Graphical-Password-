@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Graphical Password</title>
+</head>
+
+<body>
+
+    <!-- Registration Form -->
+    <form class="register-form" id="registerForm" style="display: none;">
+        <h2>Register</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Next</button>
+    </form>
+
+    <!-- Login Form -->
+    <form class="login-form" id="loginForm" style="display: none;">
+        <h2>Login</h2>
+        <label for="emailpass">Email</label>
+        <input type="email" id="emailpass" name="emailpass" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password1" name="password1" required>
+
+        <button type="submit">Next</button>
+    </form>
+
+    <!-- Graphical Password -->
+    <div class="mainContainer" id="mainContainer" style="display: none;">
+        <h2 style="text-align: center;" id="headerText">Set Graphical Password</h2>
+        <div id="patternContainer">
+            <div class="patternPoint" data-index="1"></div>
+            <div class="patternPoint" data-index="2"></div>
+            <div class="patternPoint" data-index="3"></div>
+            <div class="patternPoint" data-index="4"></div>
+            <div class="patternPoint" data-index="5"></div>
+            <div class="patternPoint" data-index="6"></div>
+            <div class="patternPoint" data-index="7"></div>
+            <div class="patternPoint" data-index="8"></div>
+            <div class="patternPoint" data-index="9"></div>
+        </div>
+        <div id="buttonsContainer">
+            <button id="savePassword">Register</button>
+            <button id="clearPattern">Clear</button>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <div id="welcomeSection" style="display: none;">
+        <h2>Welcome to,</h2>
+        <h2 id="welcomeName"></h2>
+        <p id="welcomeEmail"></p>
+        <button id="logoutButton">Logout</button>
+        <button id="storageButton">Clear Storage</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
